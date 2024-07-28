@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+
+print 'Enter first multiplier: ';
+$mul1 = <STDIN>;
+print 'Enter second multiplier: ';
+$mul2 = <STDIN>;
+print 'Product: ', $mul1 * $mul2, "\n";
