@@ -6,3 +6,4 @@ print 'Enter radius, please: ';
 $radius = <STDIN>;
 
 print $radius < 0 ? 0 : $two_pi * $radius;
+print "\n";
