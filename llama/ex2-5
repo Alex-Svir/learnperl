@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+
+print 'Enter string: ';
+$str = <STDIN>;
+print 'Enter repetitions count: ';
+$n = <STDIN>;
+
+print $str x $n;
