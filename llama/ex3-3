@@ -1,0 +1,14 @@
+#!/usr/bin/perl -w
+
+print "Enter lines:\n";
+
+@lines = sort <STDIN>;
+
+$, = '';
+print "Output 1:\n";
+print @lines;
+
+chomp(@lines);
+$, = ' ';
+print "Output 2:\n";
+print @lines;
