@@ -1,0 +1,7 @@
+#!/usr/bin/perl -w
+
+print 'Enter multiline data:', "\n";
+@lines = <STDIN>;
+print "You entered:\n";
+
+print reverse @lines;
