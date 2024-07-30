@@ -9,6 +9,6 @@ print "Output 1:\n";
 print @lines;
 
 chomp(@lines);
-$, = ' ';
+$" = ' ';
 print "Output 2:\n";
-print @lines;
+print "@lines\n";
