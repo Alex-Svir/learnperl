@@ -1,0 +1,10 @@
+#!/usr/bin/perl -w
+
+@names = qw( fred betty barney dino wilma pebbles bamm-bamm );
+
+print "Enter numbers, one per line:\n";
+chomp(@numbers = <STDIN>);
+
+foreach(@numbers) {
+  print $names[$_ - 1]."\n";
+}
