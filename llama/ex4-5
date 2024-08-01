@@ -1,0 +1,20 @@
+#!/usr/bin/perl -w
+use strict;
+use 5.010;
+
+greet( "Fred" );
+greet( "Barney" );
+greet( "Wilma" );
+greet( "Betty" );
+
+sub greet {
+  my($name) = @_;
+  state @also_here;
+  print "Hi, $name! ";
+  if (@also_here) {
+    print "I've seen: @also_here\n";
+  } else {
+    print "You are the first one here!\n";
+  }
+  push @also_here, $name;
+}
